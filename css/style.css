@@ -1,0 +1,251 @@
+/* Start Variables */
+/*=================*/
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --lighter-cyan: hsl(158, 36%, 50%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+/*====================*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: var(--cream);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  /* 14px */
+  color: var(--dark-grayish-blue);
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End Global Rules */
+
+/* Start Component */
+/*============*/
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 38.6875rem) {
+
+  /* 619px */
+  .container {
+    padding-bottom: 3rem;
+    /* 48px */
+  }
+}
+
+@media (max-width: 21.8125rem) {
+
+  /* 349px */
+  .container {
+    display: block;
+    background-color: var(--white);
+  }
+}
+
+.product-box {
+  background-color: var(--white);
+  width: 37.625rem;
+  /* 602px */
+  border-radius: 0.625rem;
+  /* 10px */
+  display: flex;
+  overflow: hidden;
+}
+
+@media (max-width: 38.6875rem) {
+
+  /* 619px */
+  .product-box {
+    width: 21.5rem;
+    /* 344px */
+    display: block;
+  }
+}
+
+@media (max-width: 21.8125rem) {
+
+  /* 349px */
+  .product-box {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.product-box .product-image {
+  flex: 1;
+  display: flex;
+}
+
+.product-box .product-image img {
+  width: 18.8125rem;
+  /* 301px */
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 38.6875rem) {
+
+  /* 619px */
+  .product-box .product-image img {
+    width: 100%;
+  }
+}
+
+.product-box .product-details {
+  flex: 1;
+  padding: 2rem;
+  /* 32px */
+}
+
+@media (max-width: 38.6875rem) {
+
+  /* 619px */
+  .product-box .product-details {
+    padding: 1.25rem;
+    /* 20px */
+  }
+}
+
+.product-box .product-details .product-label {
+  letter-spacing: 0.1875rem;
+  /* 3px */
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  /* 12px */
+  font-weight: 700;
+}
+
+.product-box .product-details h1 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--very-dark-blue);
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1;
+  margin: 1.25rem 0 1.28rem 0;
+}
+
+@media (max-width: 38.6875rem) {
+
+  /* 619px */
+  .product-box .product-details h1 {
+    margin: 1rem 0 1.5rem 0;
+  }
+}
+
+.product-box .product-details h1+p {
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+  /* 28px */
+}
+
+.product-box .product-details .price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  /* 28px */
+}
+
+.product-box .product-details .discount-price {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 1.75rem;
+  /* 28px */
+  display: block;
+  color: var(--dark-cyan);
+}
+
+.product-box .product-details .old-price {
+  display: block;
+  padding: 0 1.25rem;
+  text-decoration: line-through;
+}
+
+.product-box .product-details .sr-only {
+  position: absolute;
+  top: -100px;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.product-box .product-details .add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--dark-cyan);
+  width: 100%;
+  font-weight: 700;
+  padding: 1rem 0;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product-box .product-details .add:hover {
+  background-color: var(--lighter-cyan);
+}
+
+.product-box .product-details .add:active {
+  background-color: var(--very-dark-blue);
+}
+
+
+.product-box .product-details .add img {
+  transform: scale(0.9);
+  /* Scale both width and height by 90% to maintain the aspect ratio */
+  display: block;
+  margin-right: 0.625rem;
+  /* 10px */
+}
+
+/* End Component */
+
+/* Start Attribution */
+/*===========*/
+.attribution {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  font-size: 0.69rem;
+  /* 11px */
+  text-align: center;
+  padding: 0.31rem;
+  /* 5px */
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* End Attribution */
