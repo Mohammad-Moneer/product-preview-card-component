@@ -19,8 +19,13 @@ To get some details and background of this project visit the link below:
 
 ### Screenshot
 
-![Desktop Screenshot - Product preview card component](./Screenshot-Frontend Mentor Product preview card component-Desktop.png)
-![Mobile Screenshot - Product preview card component](./Screenshot-Frontend Mentor Product preview card component-Mobile.png)
+Desktop version
+
+![Desktop Screenshot - Product preview card component](./screenshot_product-preview-card-component_desktop.png)
+
+Mobile version
+
+![Mobile Screenshot - Product preview card component](./screenshot_product-preview-card-component_mobile.png)
 
 ### Links
 
